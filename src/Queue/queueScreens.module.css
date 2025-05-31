@@ -1,0 +1,32 @@
+.Container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+  box-sizing: border-box; /* ensures padding doesn't exceed max-width */
+}
+
+.Wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: flex-start;
+}
+
+.SearchSection {
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    padding: 0 10px;
+  }
+  .Wrapper {
+    justify-content: center;
+  }
+  .SearchSection {
+    max-width: 100%;
+  }
+}

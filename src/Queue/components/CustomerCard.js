@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default styled.div`
   border-style: solid;
@@ -6,5 +6,5 @@ export default styled.div`
   border-color: lightgray;
   border-radius: 0.2em;
   width: 290px;
-  height: 370px;
+  height: 400px;
 `;

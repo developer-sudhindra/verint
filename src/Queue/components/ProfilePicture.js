@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default styled.div`
   height: 290px;
@@ -6,4 +6,7 @@ export default styled.div`
   background-color: grey;
   border-top-left-radius: 0.2em;
   border-top-right-radius: 0.2em;
+  background-image: url(${(props) => props.imgsrc});
+  background-size: cover;
+  background-position: center;
 `;
