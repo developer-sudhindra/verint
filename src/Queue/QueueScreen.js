@@ -1,8 +1,17 @@
 /**
- * completed 4 task
- * 1. Added cu
- */
 
+1. Listed current customers within a queue.
+
+2. Integrated and used the existing <Customer /> component to render the content.
+
+3. Fetched and displayed customer profile images using the Gravatar Image request API.
+
+4. Added a text input field to filter the list of customers.
+
+5. Implemented an auto-refresh mechanism that updates the list of customers every 30 seconds.
+
+6. Applied styling to ensure a neat and responsive layout.
+ */
 import React, { Component } from "react";
 import { fetchQueueData } from "../mockApi";
 import Customer from "./components/Customer";
@@ -10,8 +19,6 @@ import Input from "./components/Input";
 import Content from "./components/Content";
 import { formatExpectedTime } from "./Util/dateTime";
 import { debounce } from "./Util/debounce";
-// eslint-disable-next-line
-import base64 from "base-64";
 import classes from "./queueScreens.module.css";
 
 export default class extends Component {
